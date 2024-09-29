@@ -1,0 +1,555 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: #f0f0f0;
+    background: url('images/background.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire background */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(26, 26, 26, 0.9); /* Semi-transparent background for logo visibility */
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar_logo_img {
+    width: 150px; /* Adjust size of the logo */
+    height: auto;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(40, 40, 40, 0.7); /* Semi-transparent background for hero section */
+    margin-bottom: 20px;
+}
+
+/* Options Container */
+.options-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.option-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 30%; /* Responsive flex items */
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.option-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.option-card h2 {
+    margin: 10px 0;
+}
+
+.option-card p {
+    margin-bottom: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: #000000; /* Solid black background */
+    padding: 10px 20px; /* Smaller padding for a smaller header */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.navbar_container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    width: 100%;
+}
+
+.navbar_logo_img {
+    height: 50px; /* Adjust logo height */
+    width: 50px; /* Make the logo square */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin-right: 10px; /* Space between logo and title */
+}
+
+.navbar_title {
+    color: #ffffff; /* Change title color */
+    font-size: 1.5rem; /* Adjust size as needed */
+}
+
+.navbar_title h1 {
+    margin: 0; /* Remove margin */
+}
+
+/* Additional Navbar Styles */
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Push menu to the right */
+}
+
+.navbar_item {
+    margin: 0 10px; /* Space between menu items */
+}
+
+.navbar_links {
+    color: #f0f0f0; /* Menu link color */
+    text-decoration: none;
+}
+
+.button {
+    background-color: #007bff; /* Button background */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Button hover effect */
+}
+/* Main content styling */
+.main {
+    padding: 20px;
+}
+
+.content_container {
+    display: flex; /* To align the text and provider list side by side */
+    gap: 40px; /* Space between the text section and provider list */
+    align-items: flex-start; /* Align text and cards from the top */
+    justify-content: center; /* Center the entire content horizontally */
+}
+
+.text_section {
+    max-width: 300px; /* Restrict the width of the text section */
+    padding-right: 20px; /* Space between text and provider cards */
+}
+
+/* Main content styling */
+.main-title {
+    font-size: 28px; /* Adjust the size for clarity */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main-description {
+    font-size: 18px;
+    color: #555; /* Optional: gives a slightly muted color for the description */
+    margin-bottom: 30px;
+}
+
+.provider_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the provider cards */
+    gap: 20px;
+}
+
+/* Provider card styling */
+.provider_card {
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: left;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.provider_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* General styling */
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #000000;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar_links {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Signup form styling */
+.signup-container {
+    background-color: white;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black; /* Text color set to black */
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black; /* Text color set to black */
+}
+
+.signup-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black; /* Text color inside input fields set to black */
+}
+
+.signup-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+.signup-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: black; /* Text color set to black */
+}
+
+.signup-footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.insurance_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align cards */
+    gap: 20px; /* Space between cards */
+}
+
+.insurance_card {
+    background-color: #000000; /* White background for cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Inner spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 250px; /* Fixed width for cards */
+    text-align: center; /* Center text */
+}
+
+.insurance_link {
+    display: inline-block;
+    margin-top: 10px; /* Space above the link */
+    padding: 10px 15px;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.insurance_link:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+body, html {
+    height: 100%; /* Ensure the body takes full height */
+    margin: 0; /* Remove default margins */
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1; /* Allow the main content to grow and fill space */
+    display: flex;
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+}
+
+.main__container {
+    max-width: 800px; /* Increased max width for larger content area */
+    width: 90%; /* Allow content to be responsive */
+    padding: 20px; /* Add padding for spacing */
+    margin: auto; /* Center the container */
+}
+
+#emojiContainer {
+    display: flex;
+    justify-content: center; /* Center emoji buttons */
+    gap: 20px; /* Space between emoji buttons */
+    margin-top: 20px; /* Space above the emoji buttons */
+}
+
+.emoji-btn {
+    font-size: 60px; /* Increased emoji button size */
+    width: 80px; /* Set width for buttons */
+    height: 80px; /* Set height for buttons */
+    border: none; /* Remove border */
+    background: transparent; /* No background */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.emoji-btn:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+.back-button-container {
+    margin-top: 30px; /* Space above back button */
+}
+
+.back-button {
+    font-size: 18px; /* Increase font size of back button */
+    text-decoration: none; /* Remove underline */
+    color: #000000; /* Blue color */
+}
+
+.back-button:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1; /* Light background for footer */
+    text-align: center; /* Center text in footer */
+    padding: 10px 0; /* Padding for footer */
+}
+
+.footer_container {
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.website_rights {
+    margin: 0; /* Remove default margin */
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Smaller font on mobile */
+    }
+    
+    h2 {
+        font-size: 1.5rem; /* Smaller font on mobile */
+    }
+
+    button {
+        font-size: 1rem; /* Smaller button text */
+    }
+
+    .emoji-btn {
+        font-size: 40px; /* Smaller emoji size */
+    }
+
+    .option-card {
+        flex: 1 1 100%; /* Full width on mobile */
+        margin: 10px 0; /* Adjust margin for mobile */
+    }
+    /* General styles */
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    background-color: #007BFF;
+    padding: 10px 20px;
+}
+
+.navbar_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_logo_img {
+    width: 50px; /* Adjust the size as needed */
+    margin-right: 10px;
+}
+
+.navbar_title {
+    color: white;
+    font-size: 24px;
+}
+
+.navbar_menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar_item {
+    margin-left: 20px;
+}
+
+.navbar_links {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.button {
+    background-color: white;
+    color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main__container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add space between form groups */
+}
+
+label {
+    display: block; /* Ensures the label is on its own line */
+    margin-bottom: 5px;
+    font-weight: bold; /* Makes the label bold */
+}
+
+input, textarea {
+    padding: 10px;
+    width: 100%; /* Ensure full width */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+textarea {
+    resize: vertical; /* Allows vertical resizing */
+}
+
+.submit-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.footer_container {
+    text-align: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+.website_rights {
+    margin: 0;
+}
+
+}

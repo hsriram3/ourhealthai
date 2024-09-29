@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - My Health Hub</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/index.html" id="navbar_logo">
+                <img src="images/logo1.jpg" alt="Company Logo" class="navbar_logo_img">
+                <span class="navbar_title">MY HEALTH HUB</span>
+            </a>
+            <ul class="navbar_menu">
+                <li class="navbar_item"><a href="/index.html" class="navbar_links">Home</a></li>
+                <li class="navbar_item"><a href="/providers.html" class="navbar_links">Providers</a></li>
+                <li class="navbar_item"><a href="/insurance-plans.html" class="navbar_links">Health Insurance</a></li>
+                <li class="navbar_item"><a href="/about-mental-health.html" class="navbar_links">About Mental Health</a></li>
+                <li class="navbar__btn"><a href="/contact.html" class="button">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Signup Form -->
+    <div class="signup-container">
+        <h1>Signup</h1>
+        <form action="#" method="POST" class="signup-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit" class="signup-button">Create Account</button>
+        </form>
+        <p class="signup-footer">Already have an account? <a href="/login.html">Login here</a>.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

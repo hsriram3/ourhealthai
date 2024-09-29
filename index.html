@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="/" id="navbar_logo">
+                    <img src="images/logo1.jpg" alt="Company Logo" class="navbar_logo_img">
+                </a>
+                <div class="navbar_title">
+                    <h1>OUR HEALTH</h1> <!-- Title beside the logo -->
+                </div>
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="/index.html" class="navbar_links">Home</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="/signup.html" class="button">Sign Up</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1>Welcome to My Health Hub</h1>
+            <p>Your journey to better health starts here</p>
+        </div>
+        
+        <div class="options-container">
+            <div class="option-card">
+                <h2>See Different Health Insurance Plans</h2>
+                <p>Explore various plans tailored to your needs.</p>
+                <button onclick="window.location.href='/insurance-plans.html'">View Plans</button>
+            </div>
+            <div class="option-card">
+                <h2>Select Providers Nearby</h2>
+                <p>Find mental health providers in your area.</p>
+                <button onclick="window.location.href='/providers.html'">Find Providers</button>
+            </div>
+            <div class="option-card">
+                <h2>About Mental Health</h2>
+                <p>Learn about mental health and emotional well-being.</p>
+                <button onclick="window.location.href='/about-mental-health.html'">Learn More</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mental Health Hub. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
+    <!-- Watson Assistant Chat Integration -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "67c541d3-d50c-4c43-a40a-f7065116018b", // The ID of this integration.
+            region: "au-syd", // The region your integration is hosted in.
+            serviceInstanceID: "98bcbff1-a098-4d07-9896-53743c392761", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+</html>
